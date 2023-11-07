@@ -458,7 +458,7 @@ st.subheader("Bike Rentals Based on Temperature (T), Humadity (H), Wind Speed (W
 
 # cluster 1
 st.caption("> High Temperature, Middle Humidity, Middle Wind Speed")
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3 = st.columns(3)
 with col1:
     avg_temp_c1 = str((cluster_thw_df["temp"]["High-T, Mid-H, Mid-W"] * 41).round(2)) + " °C"
     st.metric("Average of Temperature", value=avg_temp_c1)
